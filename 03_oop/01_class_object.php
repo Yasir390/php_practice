@@ -3,19 +3,24 @@ Dart-এর মতোই ক্লাসের ভেতর properties (ভে�
 
 <?php
 
-class Developer {
+class Developer
+{
     // Properties
-    public string $name;
-    public string $skill;
+    // public string $name;
+    // public string $skill;
 
-    // Constructor (Dart-এ ClassName() হয়, PHP-তে __construct() হয়)
-    public function __construct(string $name, string $skill) {
-        $this->name = $name;
-        $this->skill = $skill;
-    }
-
+    // // Constructor (Dart-এ ClassName() হয়, PHP-তে __construct() হয়)
+    // public function __construct(string $name, string $skill) {
+    //     $this->name = $name;
+    //     $this->skill = $skill;
+    // }
+    public function __construct(
+        public string $name,
+        public string $skill
+    ) {}
     // Method
-    public function getDetails(): string {
+    public function getDetails(): string
+    {
         // Dart-এ 'this.name' লিখতে, PHP-তে '$this->name' লিখতে হয়
         return "$this->name builds apps with $this->skill.";
     }
