@@ -25,7 +25,7 @@ class SoftwareEngineer extends Employee {
         public string $primaryLanguage // নতুন প্রোপার্টি
     ) {
         // Parent Class-এর কন্সট্রাক্টর কল করা (Dart-এর super-এর মতো)
-        parent::__construct($name, $salary);
+       parent::__construct($name, $salary);
     }
 
     // Method Override (আচরণ পরিবর্তন)
