@@ -1,0 +1,18 @@
+Flutter-এ  যেমন pubspec.yaml ফাইল আর flutter pub get কমান্ড ইউজ করো, PHP-তে ঠিক একই কাজ করে Composer!
+
+
+// composer.json ফাইল দেখতে কেমন হয়?
+// একটি প্রজেক্টে Composer সেটআপ করলে প্রজেক্টের রুট ডিরেক্টরিতে composer.json ফাইল থাকে:
+{
+    "name": "yasir/my-app",
+    "description": "My first PHP application with composer",
+    "require": {
+        "php": "^8.3",
+        "guzzlehttp/guzzle": "^7.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
